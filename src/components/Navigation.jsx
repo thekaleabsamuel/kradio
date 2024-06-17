@@ -13,6 +13,8 @@ const Navigation = ({ mode, setMode }) => {
     );
   }, []);
 
+  ///fdfdfdf
+
   return (
     <Flex
       ref={navRef}

@@ -1,3 +1,12 @@
+K Radio
+
+An in browser streaming service dedicated to music by K
+
+It will be constantly streaming 24/7 and you can listen to any tracks for free on mobile + web
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 
 const LoadingScreen = () => {
+  const loadingRef = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      loadingRef.current,
+      { rotation: 0 },
+      { rotation: 360, duration: 2, repeat: -1, ease: "none" }
+    );
+  }, []);
+
   return (
-    <div className="flex items-center justify-center h-screen">
-      <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-gray-900"></div>
+    <div ref={loadingRef}>
+      {/* Your loading screen content */}
     </div>
   );
 };
